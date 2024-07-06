@@ -4,11 +4,12 @@ import { HttpService } from '../../http.service';
 import {MatTable, MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import { DomSanitizer } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
   standalone: true,
-  imports: [MatTableModule, MatButtonModule, MatTable],
+  imports: [MatTableModule, MatButtonModule, MatTable, RouterLink],
   templateUrl: './employee-list.component.html',
   styleUrls: ['./employee-list.component.css']
 })
