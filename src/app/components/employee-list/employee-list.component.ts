@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IEmployee } from '../../interfaces/employee';
 
 @Component({
   selector: 'app-employee-list',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './employee-list.component.css'
 })
 export class EmployeeListComponent {
+  employeeList:IEmployee[] = [];
+  ngOnIntit(){
 
+  }
 }
